@@ -46,7 +46,8 @@
         {
           "motionPermission": "Permite leer el movimiento para el nivel de bolsillo."
         }
-      ]
+      ],
+      "expo-font"
     ],
     "extra": {
       "eas": {
