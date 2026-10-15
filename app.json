@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Mi Kit Móvil",
+    "slug": "mi-kit-movil",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.estudiante.mikitmovil"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.estudiante.mikitmovil",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permite usar la cámara para tomar una foto.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite consultar tu ubicación mientras usas la app."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Permite leer el movimiento para el nivel de bolsillo."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "44d47bbe-ab5f-48e0-a792-5df338dd9d33"
+      }
+    }
+  }
+}
